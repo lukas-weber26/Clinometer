@@ -9,7 +9,7 @@ if (typeof DeviceMotionEvent.requestPermission === 'function') {
         if (permissionState === 'granted') {
           window.addEventListener('devicemotion', (e) => {
             console.log(e)
-            h2.innerText = e
+            //h2.innerText = e
           });
         }
       })
@@ -28,7 +28,7 @@ if (typeof DeviceMotionEvent.requestPermission === 'function') {
         if (permissionState === 'granted') {
           window.addEventListener('deviceorientation', (e) => {
             console.log(e)
-            h3.innerText = e.alpha
+            h3.innerText = e.beta
           });
         }
       })
@@ -36,7 +36,7 @@ if (typeof DeviceMotionEvent.requestPermission === 'function') {
   } else {
     window.addEventListener('deviceorientation', (e) => {
         console.log(e)
-        h3.innerText = e.alpha
+        h3.innerText = e.beta
       });
   }
 
