@@ -1,10 +1,14 @@
 console.log("Loaded")
 const h2 = document.getElementById("beta")
 
-window.addEventListener("devicemotion", handleMotion, true);
 
-function handleMotion(event) {
-    console.log(event.beta)
-    h2.innerHTML = event.beta
-}
-
+DeviceMotionEvent.requestPermission()
+.then(response => {
+  if (response == 'granted') {
+    window.addEventListener('devicemotion', (e) => {
+        console.log(e)
+        h2.innerHTML = e
+    })
+  }
+})
+.catch(console.error)
