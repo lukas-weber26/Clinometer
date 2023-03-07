@@ -17,7 +17,7 @@ if (typeof DeviceMotionEvent.requestPermission === 'function') {
   } else {
     window.addEventListener('devicemotion', (e) => {
         console.log(e)
-        h2.innerText = e
+        //h2.innerText = e
       });
   }
 
