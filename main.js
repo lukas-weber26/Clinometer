@@ -7,7 +7,7 @@ DeviceMotionEvent.requestPermission()
   if (response == 'granted') {
     window.addEventListener('devicemotion', (e) => {
         console.log(e)
-        h2.innerHTML = e
+        h2.innerHTML = "Test"
     })
   }
 })
