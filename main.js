@@ -1,6 +1,5 @@
 console.log("Loaded")
 const h2 = document.getElementById("beta")
-const h3 = document.getElementById("alpha")
 
 
 if (typeof DeviceMotionEvent.requestPermission === 'function') {
