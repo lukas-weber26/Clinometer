@@ -1,5 +1,5 @@
 console.log("Loaded")
-const h2 = Document.getElementById("beta")
+const h2 = document.getElementById("beta")
 
 window.addEventListener("devicemotion", handleMotion, true);
 
