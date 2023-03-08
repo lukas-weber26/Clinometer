@@ -36,5 +36,5 @@ function setStyles (button) {
     btn1.style.display = "none";
     btn2.style.display = "none";
     btn3.style.display = "none";
-    button.style.display = "block";
+    button.style.display = "flex";
 }
