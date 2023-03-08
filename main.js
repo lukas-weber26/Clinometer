@@ -17,7 +17,7 @@ btn1.addEventListener("click", (event) => {
 
 btn2.addEventListener("click", (event) => {
     //SET OUTPUT HERE
-    display.textContent = "The measured angle is: " + outputAngle + " degrees."
+    display.textContent = "The measured angle is: " + outputAngle.toFixed(3) + " degrees."
     setStyles(btn3)
     window.removeEventListener("deviceorientation", handleOrientation)
 })
