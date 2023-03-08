@@ -11,7 +11,7 @@ let measure = false
 timeStep = 100 //ten times per second
 
 window.addEventListener("deviceorientation", handleOrientation, true);
-window.addEventListener("devicemotion", handleMotion, true);
+window.addEventListener("devicemotion", handleMotion);
 
 let rawPositionX = []
 let rawPositionY = []
@@ -89,7 +89,7 @@ function handleOrientation(event) {
   }
 
 function handleMotion(event) {
-    rawMotionEvent = [event.x, event.y, event.z];
+    rawMotionEvent = [event.acceleration.x, event.acceleration.x, event.acceleration.x];
 }
 
 function setStyles (button) {
