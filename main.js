@@ -6,7 +6,7 @@ const btn2 = document.getElementById("btn2")
 const btn3 = document.getElementById("btn3")
 const display = document.getElementById("Display")
 
-const tester = document.getElementById(tester)
+const tester = document.getElementById("tester")
 
 let outputAngle = 0
 let measure = false  
