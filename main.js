@@ -6,6 +6,8 @@ const btn2 = document.getElementById("btn2")
 const btn3 = document.getElementById("btn3")
 const display = document.getElementById("Display")
 
+const tester = document.getElementById(tester)
+
 let outputAngle = 0
 let measure = false  
 timeStep = 100 //ten times per second
@@ -89,7 +91,8 @@ function handleOrientation(event) {
   }
 
 function handleMotion(event) {
-    rawMotionEvent = [event.acceleration.x, event.acceleration.x, event.acceleration.x];
+    rawMotionEvent = [event.acceleration.z, event.acceleration.y, event.acceleration.z];
+    tester.innerText = rawMotionEvent
 }
 
 function setStyles (button) {
